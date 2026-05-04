@@ -33,7 +33,6 @@ This analysis combines financial feasibility with sensitivity testing to inform 
 <img width="567" height="468" alt="NOI 1" src="https://github.com/user-attachments/assets/a1a85abc-f847-4955-97d3-cf3e7c31096c" />
 <img width="567" height="455" alt="noi rent" src="https://github.com/user-attachments/assets/b2f7ca3a-b659-424c-a53e-1653398197fa" />
 <img width="567" height="468" alt="Dev cost comp" src="https://github.com/user-attachments/assets/1c6e2363-5139-4901-ba1f-7ad2f4e9891d" />
-<img width="567" height="455" alt="noi rent" src="https://github.com/user-attachments/assets/8b3d9430-bcf1-48cb-99f5-a4d6f7bf13fd" />
 
 ---
 
@@ -71,7 +70,9 @@ This analysis combines financial feasibility with sensitivity testing to inform 
 ### Rent Sensitivity
 - **South Riding** shows strong upside with rent growth  
 - **Landover Mall** is highly sensitive to rent declines  
-- **Waterfront DC** remains stable but capped  
+- **Waterfront DC** remains stable but capped
+
+---<img width="567" height="455" alt="noi rent" src="https://github.com/user-attachments/assets/8b3d9430-bcf1-48cb-99f5-a4d6f7bf13fd" />
 
 ### Cost Sensitivity
 - **South Riding** maintains feasibility under cost increases  
