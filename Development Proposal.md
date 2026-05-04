@@ -30,6 +30,10 @@ This analysis combines financial feasibility with sensitivity testing to inform 
 | **Total Cost** | $79.7M | $363.8M | $396.9M |
 | **NOI** | $4.9M | $16.1M | $21.7M |
 | **Residual Land Value (RLV)** | $18.0M | $26.5M | $141.6M |
+<img width="567" height="468" alt="NOI 1" src="https://github.com/user-attachments/assets/a1a85abc-f847-4955-97d3-cf3e7c31096c" />
+<img width="567" height="455" alt="noi rent" src="https://github.com/user-attachments/assets/b2f7ca3a-b659-424c-a53e-1653398197fa" />
+<img width="567" height="468" alt="Dev cost comp" src="https://github.com/user-attachments/assets/1c6e2363-5139-4901-ba1f-7ad2f4e9891d" />
+<img width="567" height="455" alt="noi rent" src="https://github.com/user-attachments/assets/8b3d9430-bcf1-48cb-99f5-a4d6f7bf13fd" />
 
 ---
 
@@ -74,19 +78,20 @@ This analysis combines financial feasibility with sensitivity testing to inform 
 - **Landover Mall** becomes quickly infeasible  
 - **Waterfront DC** has the lowest exposure  
 
----
+---<img width="567" height="455" alt="rlv sensitivity" src="https://github.com/user-attachments/assets/e56d4fc9-6b54-483d-9e35-7da1bad44c67" />
+
 
 ## Capital Allocation Strategy
 
 A diversified investment approach is recommended:
 
-- **60–70% → South Riding, VA**  
+- **1→ South Riding, VA**  
   *Primary return engine*  
 
-- **20–30% → Waterfront DC**  
+- **2 → Waterfront DC**  
   *Stability + urban positioning*  
 
-- **10–20% → Landover Mall (Conditional)**  
+- **3 → Landover Mall (Conditional)**  
   *Only with public-private partnership support*  
 
 ---
