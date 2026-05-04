@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Mixed-Use Development Analysis</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body style="font-family: Arial; max-width: 900px; margin: auto;">
+
+<h1>Mixed-Use Development Strategy</h1>
+<p><b>Capital Allocation & Public-Private Investment</b></p>
+
+<hr>
+
+<h2>Overview</h2>
+<p>
+This analysis compares three mixed-use development sites:
+Waterfront DC, Landover Mall, and South Riding, VA.
+</p>
+
+<hr>
+
+<h2>Financial Comparison</h2>
+
+<table border="1" cellpadding="8" cellspacing="0" width="100%">
+<tr>
+<th>Metric</th>
+<th>Waterfront DC</th>
+<th>Landover Mall</th>
+<th>South Riding</th>
+</tr>
+
+<tr>
+<td>Total Cost</td>
+<td>$79.7M</td>
+<td>$363.8M</td>
+<td>$396.9M</td>
+</tr>
+
+<tr>
+<td>NOI</td>
+<td>$4.9M</td>
+<td>$16.1M</td>
+<td>$21.7M</td>
+</tr>
+
+<tr>
+<td>RLV</td>
+<td>$18.0M</td>
+<td>$26.5M</td>
+<td>$141.6M</td>
+</tr>
+</table>
+
+<h2>NOI Comparison</h2>
+<canvas id="noiChart"></canvas>
+
+<h2>Total Cost Comparison</h2>
+<canvas id="costChart"></canvas>
+
+<h2>Residual Land Value</h2>
+<canvas id="rlvChart"></canvas>
+
+<h2>Development Strategy</h2>
+<ul>
+<li><b>South Riding:</b> Highest returns (Primary investment)</li>
+<li><b>Waterfront DC:</b> Stable, lower-risk</li>
+<li><b>Landover Mall:</b> Requires public-private partnership</li>
+</ul>
+
+<h2>Final Recommendation</h2>
+<p>
+Allocate majority capital to South Riding, support with Waterfront DC, 
+and pursue Landover only with public incentives.
+</p>
+
+<script>
+const labels = ["Waterfront DC", "Landover Mall", "South Riding"];
+
+new Chart(document.getElementById("noiChart"), {
+  type: "bar",
+  data: {
+    labels: labels,
+    datasets: [{
+      label: "NOI ($M)",
+      data: [4.9, 16.1, 21.7]
+    }]
+  }
+});
+
+new Chart(document.getElementById("costChart"), {
+  type: "bar",
+  data: {
+    labels: labels,
+    datasets: [{
+      label: "Total Cost ($M)",
+      data: [79.7, 363.8, 396.9]
+    }]
+  }
+});
+
+new Chart(document.getElementById("rlvChart"), {
+  type: "bar",
+  data: {
+    labels: labels,
+    datasets: [{
+      label: "RLV ($M)",
+      data: [18.0, 26.5, 141.6]
+    }]
+  }
+});
+</script>
+
+</body>
+</html>
