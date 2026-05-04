@@ -1,203 +1,135 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Mixed-Use Development Strategy</title>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f8f9fb;
-      color: #1f2937;
-    }
-    header {
-      background: #111827;
-      color: white;
-      padding: 40px;
-      text-align: center;
-    }
-    section {
-      padding: 40px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h2 {
-      border-bottom: 2px solid #e5e7eb;
-      padding-bottom: 10px;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-      background: white;
-    }
-    th, td {
-      padding: 12px;
-      border-bottom: 1px solid #e5e7eb;
-      text-align: center;
-    }
-    th {
-      background: #f3f4f6;
-    }
-    canvas {
-      margin-top: 30px;
-    }
-    .highlight {
-      background: #ecfdf5;
-      padding: 15px;
-      border-left: 5px solid #10b981;
-      margin-top: 20px;
-    }
-  </style>
-</head>
-<body>
+# Mixed-Use Development Strategy  
+### Capital Allocation & Public-Private Investment Recommendation  
 
-<header>
-  <h1>Mixed-Use Development Strategy</h1>
-  <p>Capital Allocation & Public-Private Investment Recommendation</p>
-</header>
+This analysis evaluates three mixed-use development opportunities to determine the optimal capital allocation strategy across retail and residential assets.
 
-<section>
-  <h2>Overview</h2>
-  <p>
-    This analysis evaluates three mixed-use development opportunities—Waterfront DC, 
-    Landover Mall, and South Riding, VA—to determine the optimal capital allocation strategy 
-    balancing return, risk, and public impact.
-  </p>
-</section>
+## Sites Analyzed
+- **Waterfront DC** — Urban Infill  
+- **Landover Mall** — Redevelopment Opportunity  
+- **South Riding, VA** — Greenfield Growth  
 
-<section>
-  <h2>Financial Comparison</h2>
+---
 
-  <table>
-    <tr>
-      <th>Metric</th>
-      <th>Waterfront DC</th>
-      <th>Landover Mall</th>
-      <th>South Riding, VA</th>
-    </tr>
-    <tr>
-      <td>Total Cost</td>
-      <td>$79.7M</td>
-      <td>$363.8M</td>
-      <td>$396.9M</td>
-    </tr>
-    <tr>
-      <td>NOI</td>
-      <td>$4.9M</td>
-      <td>$16.1M</td>
-      <td>$21.7M</td>
-    </tr>
-    <tr>
-      <td>Residual Land Value</td>
-      <td>$18.0M</td>
-      <td>$26.5M</td>
-      <td>$141.6M</td>
-    </tr>
-  </table>
+## Overview
 
-  <canvas id="noiChart"></canvas>
-  <canvas id="costChart"></canvas>
-  <canvas id="rlvChart"></canvas>
+The objective is to identify a development strategy that balances:
 
-</section>
+- Financial return  
+- Risk exposure  
+- Public-private partnership potential  
+- Long-term asset value creation  
 
-<section>
-  <h2>Development Strategy</h2>
+This analysis combines financial feasibility with sensitivity testing to inform a board-level investment decision.
 
-  <div class="grid">
+---
 
-    <div class="card">
-      <h3>South Riding, VA</h3>
-      <p><strong>Flagship Investment</strong></p>
-      <p>Highest NOI and land value. Strong residential demand supports retail.</p>
-    </div>
+## Financial Comparison
 
-    <div class="card">
-      <h3>Waterfront DC</h3>
-      <p><strong>Strategic Urban Play</strong></p>
-      <p>Lower cost, stable returns, strong alignment with smart growth.</p>
-    </div>
+| Metric | Waterfront DC | Landover Mall | South Riding, VA |
+|--------|-------------|---------------|------------------|
+| **Total Cost** | $79.7M | $363.8M | $396.9M |
+| **NOI** | $4.9M | $16.1M | $21.7M |
+| **Residual Land Value (RLV)** | $18.0M | $26.5M | $141.6M |
 
-    <div class="card">
-      <h3>Landover Mall</h3>
-      <p><strong>Redevelopment Opportunity</strong></p>
-      <p>High cost and risk, but strong candidate for public-private partnership.</p>
-    </div>
+---
 
-  </div>
-</section>
+## Key Insights
 
-<section>
-  <h2>Capital Allocation</h2>
+### South Riding, VA — Flagship Investment
+- Highest NOI and Residual Land Value  
+- Strong residential-driven retail demand  
+- Most scalable and financially resilient  
 
-  <div class="highlight">
-    <strong>Recommended Strategy:</strong>
-    <ul>
-      <li>60–70% → South Riding (Primary Return Driver)</li>
-      <li>20–30% → Waterfront DC (Stability + Urban Impact)</li>
-      <li>10–20% → Landover Mall (Only with Public Incentives)</li>
-    </ul>
-  </div>
+**Takeaway:** Primary return driver  
 
-</section>
+---
 
-<section>
-  <h2>Final Recommendation</h2>
-  <p>
-    Approve a phased mixed-use development strategy led by South Riding, supported by 
-    Waterfront DC, and conditionally including Landover Mall through public-private partnership.
-  </p>
-</section>
+### Waterfront DC — Strategic Urban Investment
+- Lowest total development cost  
+- Stable, lower-risk returns  
+- Strong alignment with transit-oriented development  
 
-<script>
-  const labels = ["Waterfront DC", "Landover Mall", "South Riding"];
+**Takeaway:** Portfolio stabilizer + urban impact  
 
-  new Chart(document.getElementById("noiChart"), {
-    type: "bar",
-    data: {
-      labels: labels,
-      datasets: [{
-        label: "NOI (Millions)",
-        data: [4.9, 16.1, 21.7]
-      }]
-    }
-  });
+---
 
-  new Chart(document.getElementById("costChart"), {
-    type: "bar",
-    data: {
-      labels: labels,
-      datasets: [{
-        label: "Total Cost (Millions)",
-        data: [79.7, 363.8, 396.9]
-      }]
-    }
-  });
+### Landover Mall — Public-Private Redevelopment Opportunity
+- High cost relative to value creation  
+- Most sensitive to market fluctuations  
+- Requires public subsidy to be viable  
 
-  new Chart(document.getElementById("rlvChart"), {
-    type: "bar",
-    data: {
-      labels: labels,
-      datasets: [{
-        label: "Residual Land Value (Millions)",
-        data: [18.0, 26.5, 141.6]
-      }]
-    }
-  });
-</script>
+**Takeaway:** Conditional investment only  
 
-</body>
-</html>
+---
+
+## Sensitivity Findings
+
+### Rent Sensitivity
+- **South Riding** shows strong upside with rent growth  
+- **Landover Mall** is highly sensitive to rent declines  
+- **Waterfront DC** remains stable but capped  
+
+### Cost Sensitivity
+- **South Riding** maintains feasibility under cost increases  
+- **Landover Mall** becomes quickly infeasible  
+- **Waterfront DC** has the lowest exposure  
+
+---
+
+## Capital Allocation Strategy
+
+A diversified investment approach is recommended:
+
+- **60–70% → South Riding, VA**  
+  *Primary return engine*  
+
+- **20–30% → Waterfront DC**  
+  *Stability + urban positioning*  
+
+- **10–20% → Landover Mall (Conditional)**  
+  *Only with public-private partnership support*  
+
+---
+
+## Public-Private Investment Framing
+
+| Site | Role | Public Sector Alignment |
+|------|------|------------------------|
+| **South Riding** | Growth driver | Infrastructure support |
+| **Waterfront DC** | Urban catalyst | Strong planning alignment |
+| **Landover Mall** | Equity-focused redevelopment | Requires incentives (TIF, grants) |
+
+---
+
+## Final Recommendation
+
+Approve a phased mixed-use development strategy:
+
+> **Lead with South Riding for returns, support with Waterfront for stability, and pursue Landover only through structured public-private partnership.**
+
+This approach:
+- Maximizes financial performance  
+- Balances risk across asset types  
+- Aligns with regional economic and planning goals  
+
+---
+
+## Notebook & Analysis
+
+The full analysis, including charts and sensitivity testing, is available in the Colab notebook:
+
+📊 `mixed_use_development_analysis.ipynb`
+
+---
+
+## Next Steps
+
+- Incorporate IRR and yield metrics  
+- Layer in phasing strategy  
+- Evaluate financing structures and incentives  
+
+---
+
+## Author
+
+Development Feasibility & Strategy Analysis  
