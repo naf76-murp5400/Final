@@ -31,6 +31,98 @@ This analysis combines financial feasibility with sensitivity testing to inform 
 | **NOI** | $4.9M | $16.1M | $21.7M |
 | **Residual Land Value (RLV)** | $18.0M | $26.5M | $141.6M |
 
+
+<table border="1" cellpadding="8" cellspacing="0" width="100%">
+<tr>
+<th>Metric</th>
+<th>Waterfront DC</th>
+<th>Landover Mall</th>
+<th>South Riding</th>
+</tr>
+
+<tr>
+<td>Total Cost</td>
+<td>$79.7M</td>
+<td>$363.8M</td>
+<td>$396.9M</td>
+</tr>
+
+<tr>
+<td>NOI</td>
+<td>$4.9M</td>
+<td>$16.1M</td>
+<td>$21.7M</td>
+</tr>
+
+<tr>
+<td>RLV</td>
+<td>$18.0M</td>
+<td>$26.5M</td>
+<td>$141.6M</td>
+</tr>
+</table>
+
+<h2>NOI Comparison</h2>
+<canvas id="noiChart"></canvas>
+
+<h2>Total Cost Comparison</h2>
+<canvas id="costChart"></canvas>
+
+<h2>Residual Land Value</h2>
+<canvas id="rlvChart"></canvas>
+
+<h2>Development Strategy</h2>
+<ul>
+<li><b>South Riding:</b> Highest returns (Primary investment)</li>
+<li><b>Waterfront DC:</b> Stable, lower-risk</li>
+<li><b>Landover Mall:</b> Requires public-private partnership</li>
+</ul>
+
+<h2>Final Recommendation</h2>
+<p>
+Allocate majority capital to South Riding, support with Waterfront DC, 
+and pursue Landover only with public incentives.
+</p>
+
+<script>
+const labels = ["Waterfront DC", "Landover Mall", "South Riding"];
+
+new Chart(document.getElementById("noiChart"), {
+  type: "bar",
+  data: {
+    labels: labels,
+    datasets: [{
+      label: "NOI ($M)",
+      data: [4.9, 16.1, 21.7]
+    }]
+  }
+});
+
+new Chart(document.getElementById("costChart"), {
+  type: "bar",
+  data: {
+    labels: labels,
+    datasets: [{
+      label: "Total Cost ($M)",
+      data: [79.7, 363.8, 396.9]
+    }]
+  }
+});
+
+new Chart(document.getElementById("rlvChart"), {
+  type: "bar",
+  data: {
+    labels: labels,
+    datasets: [{
+      label: "RLV ($M)",
+      data: [18.0, 26.5, 141.6]
+    }]
+  }
+});
+</script>
+
+</body>
+</html>
 ---
 
 ## Key Insights
