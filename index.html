@@ -135,3 +135,72 @@ new Chart(document.getElementById("rlvChart"), {
 
 </body>
 </html>
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f8fafc;
+  color: #1e293b;
+}
+
+header {
+  background: #0f172a;
+  color: white;
+  padding: 50px;
+  text-align: center;
+}
+
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px;
+}
+
+h2 {
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #e2e8f0;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.highlight {
+  border-left: 6px solid #16a34a;
+}
+
+.warning {
+  border-left: 6px solid #dc2626;
+}
+
+.allocation li {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.final {
+  background: #ecfeff;
+  border-left: 6px solid #06b6d4;
+}
