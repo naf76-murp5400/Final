@@ -1,0 +1,1 @@
+This analysis evaluates three mixed-use development opportunities to determine the optimal capital allocation strategy across retail and residential assets. After evaluating the Waterfront (DC), Landover Mall (MD), and South Riding (VA) locations, we recommend that ConnectGreaterWashington focus its immediate investment on the South Riding site. 
